@@ -1,0 +1,25 @@
+# possible values: DEBUG, INFO, WARNING, ERROR, FATAL
+log_level = "DEBUG"
+
+[base]
+name = "test-app"
+listen_port = 8888
+
+[jwt]
+secret_key = "D6sU3iYa9HA5gbeWLpQtjeM4UWYXtkqv"
+expire_time = 7200
+issuer = "test-app"
+
+[mysql]
+hostname = "127.0.0.1"
+database = "gin_db"
+username = "root"
+password = "root"
+port = 3306
+prefix = "g_"
+
+[redis]
+host = "127.0.0.1"
+port = 6379
+password = ""
+db = 0
